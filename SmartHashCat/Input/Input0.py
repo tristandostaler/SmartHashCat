@@ -8,6 +8,7 @@ class Input(InputAbstract):
     def __init__(self, attacker, filters):
         super(Input, self).__init__("InputCeWL")
         self.filters = [
+            filters['FilterStripAndLower'],
             filters['FilterUnique'],
             filters['FilterWriteToSmartFile'],
             filters['FilterCombinaison'],
@@ -27,6 +28,7 @@ class Input(InputAbstract):
         Misc.print_date_time()
     
     def get_results(self):
+        #print("input 0")
         with open(self.cewl_file, 'r') as f:
             yield f.readline()
             

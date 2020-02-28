@@ -259,12 +259,12 @@ def main():
                 "Company name (-n) needed for phase 0!")
         attacker.phase_zero()
 
-    if args.phase <= 1:
-        attacker.attack_dictio()
+    #if args.phase <= 1:
+    #    attacker.attack_dictio()
 
-    for i in range(2, 7):
-        if(args.phase <= i):
-            attacker.attack_mask(phase_selection=i)
+    #for i in range(2, 7):
+    #    if(args.phase <= i):
+    #        attacker.attack_mask(phase_selection=i)
 
 
 if __name__ == "__main__":

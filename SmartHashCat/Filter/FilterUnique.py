@@ -9,6 +9,7 @@ class Filter(FilterAbstract):
         super(Filter, self).__init__(previous_input)
 
     def get_results(self):
+        print("filter unique")
         duplicates = []
         for l1 in self.previous_input.get_results():
             count = 0

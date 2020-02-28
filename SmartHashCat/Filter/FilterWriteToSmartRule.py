@@ -10,8 +10,12 @@ class Filter(FilterAbstract):
         self.smart_rule = attacker.smart_rule
 
     def get_results(self):
+        print("write to smart rule")
+        #for l in self.previous_input.get_results():
+        #    yield l
         with open(self.smart_rule, 'a') as f:
             for line in self.previous_input.get_results():
                 #print(line)
                 f.write(f"{line}\n")
                 yield line
+        #return self.previous_input.get_results()

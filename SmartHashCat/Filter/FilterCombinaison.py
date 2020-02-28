@@ -15,7 +15,7 @@ class Filter(FilterAbstract):
 
     def get_lines_1(self):
         for l in self.previous_input.get_results():
-            yield l.strip().lower()
+            yield l
     
     def get_lines_2(self):
         for l in open(self.user_list, "r"):

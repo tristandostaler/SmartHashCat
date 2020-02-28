@@ -11,6 +11,7 @@ class InputAbstract:
         return len(self.filters) > 0
 
     def run(self):
+        self.filters = self.filters[::-1]
         self.run_child()
 
     def run_child(self):

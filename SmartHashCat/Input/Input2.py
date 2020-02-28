@@ -8,6 +8,7 @@ class Input(InputAbstract):
     def __init__(self, attacker, filters):
         super(Input, self).__init__("InputDefaultFiles")
         self.filters = [
+            filters['FilterStripAndLower'],
             filters['FilterUnique'],
             filters['FilterWriteToSmartFile'],
             filters['FilterCombinaison'],
