@@ -5,22 +5,20 @@ import Misc
 
 class Filter(FilterAbstract):
 
-    def __init__(self, attacker):
-        super(Filter, self).__init__()
-        self.filter_unique = self.get_new_tempfile_name()
+    def __init__(self, attacker, previous_input):
+        super(Filter, self).__init__(previous_input)
 
-    def get_new_tempfile_name(self):
-        return "tmp/unique_out.txt"
-
-    def run_child(self, filter_transit_file):
-        Misc.write_text_to_file("", self.filter_unique, False)
-        for l1 in open(filter_transit_file):
+    def get_results(self):
+        print("in filter unique")
+        duplicates = []
+        for l1 in self.previous_input.get_results():
             count = 0
-            for l2 in open(self.filter_unique):
+            for l2 in self.previous_input.get_results():
                 if l1 == l2:
                     count += 1
+                    break
             if count == 0:
-                with open(self.filter_unique, 'a') as f:
-                    f.write(l1)
-        return self.filter_unique
-                
+                yield l1
+            elif l1 not in duplicates:
+                duplicates.append(l1)
+                yield l1

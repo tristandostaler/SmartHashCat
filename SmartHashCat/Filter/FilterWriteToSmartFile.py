@@ -5,14 +5,15 @@ import Misc
 
 class Filter(FilterAbstract):
 
-    def __init__(self, attacker):
-        super(Filter, self).__init__()
+    '''Note: this is the only filter that outputs something and returns nothing!'''
+    def __init__(self, attacker, previous_input):
+        super(Filter, self).__init__(previous_input)
         self.smart_file = attacker.smart_file
 
-    def get_new_tempfile_name(self):
-        return ""
-
-    def run_child(self, filter_transit_file):
-        Misc.copy_file_content_to_other_file(
-            filter_transit_file, self.smart_file)
-        return filter_transit_file
+    def get_results(self):
+        print("in filter write to smartfile")
+        with open(self.smart_file, 'a') as f:
+            for line in self.previous_input.get_results():
+                #print(line)
+                f.write(f"{line}\n")
+        return
