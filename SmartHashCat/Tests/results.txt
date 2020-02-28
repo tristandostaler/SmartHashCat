@@ -1,489 +1,0 @@
-Time: 2019-03-04 20:02:00.778797
-Sending default data to dictionary
-Starting cewl. You can force stop anytime with "CTRL+C"
-You can interact normally with the program!
-Executing Command: cewl -d 1 -e -v https://www.example.com -w tmp/cewl_out.txt
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> CeWL 5.3 (Heading Upwards) Robin Wood (robin@digi.ninja) (https://digi.ninja/)
->>> Starting at https://www.example.com
->>> Visiting: https://www.example.com, got response code 200
->>> Attribute text found:
->>> 
->>> 
->>> Offsite link, not following: http://www.iana.org/domains/example
->>> Writing words to file
->>> No email addresses found
-Time: 2019-03-04 20:02:01.123940
-Time: 2019-03-04 20:02:01.133024
-Starting combinations
-0 / 92511668 / 925116136 / 925116204 / 925116272 / 925116340 / 925116408 / 925116476 / 925116544 / 925116612 / 925116680 / 925116748 / 925116816 / 925116884 / 925116952 / 9251161020 / 9251161088 / 9251161156 / 9251161224 / 9251161292 / 9251161756 / 9251162220 / 9251162684 / 9251163148 / 9251163612 / 9251164076 / 9251164540 / 9251165004 / 9251165468 / 9251165932 / 9251166396 / 9251166860 / 9251167324 / 9251167788 / 9251168252 / 9251168716 / 9251169180 / 9251169644 / 92511610108 / 92511610572 / 92511611036 / 92511611500 / 92511611964 / 92511612428 / 92511612892 / 92511613356 / 92511613820 / 92511614284 / 92511614748 / 92511615212 / 92511615676 / 92511616140 / 92511616604 / 92511617068 / 92511617532 / 92511617996 / 92511618460 / 92511618924 / 92511619388 / 92511619852 / 92511620316 / 92511620780 / 92511621244 / 92511621708 / 92511622172 / 92511622636 / 92511623100 / 92511623564 / 92511624028 / 92511624492 / 92511624956 / 92511625420 / 92511625884 / 92511673212 / 925116120540 / 925116167868 / 925116215196 / 925116262524 / 925116309852 / 925116357180 / 925116404508 / 925116451836 / 925116499164 / 925116546492 / 925116593820 / 925116641148 / 925116688476 / 925116735804 / 925116783132 / 925116830460 / 925116877788 / 925116925116 / 925116925116 / 925116
-Time: 2019-03-04 20:02:01.512998
-Time: 2019-03-04 20:02:01.513157
-Starting attack!
-
-Starting hashcat leetspeak.rule attacks (on all defined files, including SmartHCDict and Rockyou)
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session cvquak1l Tests/hibp_subset.txt tmp/SmartHCDict.txt -r /usr/share/hashcat/rules/leetspeak.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project
->>> ====================================
->>> * Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
->>> 
->>> Counting lines in Tests/hibp_subset.txt...[2KCounted lines in Tests/hibp_subset.txt...[2KParsing Hashes: 1/10000 (0.01%)...[2KParsed Hashes: 10000/10000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10000 digests; 10000 unique digests, 1 unique salts
->>> Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
->>> Rules: 17
->>> 
->>> Applicable optimizers:
->>> * Zero-Byte
->>> * Early-Skip
->>> * Not-Salted
->>> * Not-Iterated
->>> * Single-Salt
->>> * Raw-Hash
->>> 
->>> Password length minimum: 0
->>> Password length maximum: 256
->>> 
->>> [33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
->>> [33mThis enables cracking passwords and salts > length 32 but for the price of drastical reduced performance.[0m
->>> [33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
->>> [33m[0m
->>> Watchdog: Hardware monitoring interface not found on your system.
->>> Watchdog: Temperature abort trigger disabled.
->>> Watchdog: Temperature retain trigger disabled.
->>> 
->>> INFO: Removed 1870 hashes found in potfile.
->>> 
->>> Initializing device kernels and memory...[2K[33m* Device #1: build_opts '-I /usr/share/hashcat/OpenCL -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=1 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=1000 -D _unroll'[0m
->>> Initialized device kernels and memory...[2KDictionary cache built:
->>> * Filename..: tmp/SmartHCDict.txt
->>> * Passwords.: 925137
->>> * Bytes.....: 15920919
->>> * Keyspace..: 15727329
->>> * Runtime...: 0 secs
->>> 
->>>                                                           - Device #1: autotuned kernel-accel to 1024
->>> - Device #1: autotuned kernel-loops to 8
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit => [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>                                                           [33mApproaching final keyspace - workload adjusted.[0m
->>> [33m[0m
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>
->>> Session..........: cvquak1l
->>> Status...........: Exhausted
->>> Hash.Type........: NTLM
->>> Hash.Target......: Tests/hibp_subset.txt
->>> Time.Started.....: Mon Mar  4 20:02:01 2019 (2 secs)
->>> Time.Estimated...: Mon Mar  4 20:02:03 2019 (0 secs)
->>> Guess.Base.......: File (tmp/SmartHCDict.txt)
->>> Guess.Mod........: Rules (/usr/share/hashcat/rules/leetspeak.rule)
->>> Guess.Queue......: 1/1 (100.00%)
->>> Speed.Dev.#1.....: 12443.9 kH/s (3.41ms)
->>> Recovered........: 1870/10000 (18.70%) Digests, 0/1 (0.00%) Salts
->>> Recovered/Time...: CUR:N/A,N/A,N/A AVG:0,0,0 (Min,Hour,Day)
->>> Progress.........: 15727329/15727329 (100.00%)
->>> Rejected.........: 0/15727329 (0.00%)
->>> Restore.Point....: 925137/925137 (100.00%)
->>> Candidates.#1....: 1996j@v@@$k1ng -> qu3b3<w0rld@$k1ng
->>> HWMon.Dev.#1.....: N/A
->>> 
->>> Started: Mon Mar  4 20:02:01 2019
->>> [2KStopped: Mon Mar  4 20:02:03 2019
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session cvquak1l Tests/hibp_subset.txt /usr/share/SmartHashCat/lists/rockyou.txt -r /usr/share/hashcat/rules/leetspeak.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project
->>> ====================================
->>> * Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
->>> 
->>> Counting lines in Tests/hibp_subset.txt...[2KCounted lines in Tests/hibp_subset.txt...[2KParsing Hashes: 1/10000 (0.01%)...[2KParsed Hashes: 10000/10000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10000 digests; 10000 unique digests, 1 unique salts
->>> Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
->>> Rules: 17
->>> 
->>> Applicable optimizers:
->>> * Zero-Byte
->>> * Early-Skip
->>> * Not-Salted
->>> * Not-Iterated
->>> * Single-Salt
->>> * Raw-Hash
->>> 
->>> Password length minimum: 0
->>> Password length maximum: 256
->>> 
->>> [33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
->>> [33mThis enables cracking passwords and salts > length 32 but for the price of drastical reduced performance.[0m
->>> [33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
->>> [33m[0m
->>> Watchdog: Hardware monitoring interface not found on your system.
->>> Watchdog: Temperature abort trigger disabled.
->>> Watchdog: Temperature retain trigger disabled.
->>> 
->>> INFO: Removed 1870 hashes found in potfile.
->>> 
->>> Initializing device kernels and memory...[2K[33m* Device #1: build_opts '-I /usr/share/hashcat/OpenCL -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=1 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=1000 -D _unroll'[0m
->>> Initialized device kernels and memory...[2KDictionary cache hit:
->>> * Filename..: /usr/share/SmartHashCat/lists/rockyou.txt
->>> * Passwords.: 14344384
->>> * Bytes.....: 139921497
->>> * Keyspace..: 243854528
->>> 
->>>                                                           - Device #1: autotuned kernel-accel to 1024
->>> - Device #1: autotuned kernel-loops to 8
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit => [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>                                                           [33mApproaching final keyspace - workload adjusted.[0m
->>> [33m[0m
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>
->>> Session..........: cvquak1l
->>> Status...........: Exhausted
->>> Hash.Type........: NTLM
->>> Hash.Target......: Tests/hibp_subset.txt
->>> Time.Started.....: Mon Mar  4 20:02:04 2019 (17 secs)
->>> Time.Estimated...: Mon Mar  4 20:02:21 2019 (0 secs)
->>> Guess.Base.......: File (/usr/share/SmartHashCat/lists/rockyou.txt)
->>> Guess.Mod........: Rules (/usr/share/hashcat/rules/leetspeak.rule)
->>> Guess.Queue......: 1/1 (100.00%)
->>> Speed.Dev.#1.....: 14175.8 kH/s (2.93ms)
->>> Recovered........: 1870/10000 (18.70%) Digests, 0/1 (0.00%) Salts
->>> Recovered/Time...: CUR:N/A,N/A,N/A AVG:0,0,0 (Min,Hour,Day)
->>> Progress.........: 243854528/243854528 (100.00%)
->>> Rejected.........: 0/243854528 (0.00%)
->>> Restore.Point....: 14344384/14344384 (100.00%)
->>> Candidates.#1....: $HEX[206b6d3831303838] -> $HEX[042a0337c2a156406d30242103]
->>> HWMon.Dev.#1.....: N/A
->>> 
->>> Started: Mon Mar  4 20:02:03 2019
->>> [2KStopped: Mon Mar  4 20:02:23 2019
-
-Starting hashcat best64.rule attacks (on all defined files, including SmartHCDict and Rockyou)
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session cvquak1l Tests/hibp_subset.txt tmp/SmartHCDict.txt -r /usr/share/hashcat/rules/best64.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project
->>> ====================================
->>> * Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
->>> 
->>> Counting lines in Tests/hibp_subset.txt...[2KCounted lines in Tests/hibp_subset.txt...[2KParsing Hashes: 1/10000 (0.01%)...[2KParsed Hashes: 10000/10000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10000 digests; 10000 unique digests, 1 unique salts
->>> Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
->>> Rules: 77
->>> 
->>> Applicable optimizers:
->>> * Zero-Byte
->>> * Early-Skip
->>> * Not-Salted
->>> * Not-Iterated
->>> * Single-Salt
->>> * Raw-Hash
->>> 
->>> Password length minimum: 0
->>> Password length maximum: 256
->>> 
->>> [33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
->>> [33mThis enables cracking passwords and salts > length 32 but for the price of drastical reduced performance.[0m
->>> [33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
->>> [33m[0m
->>> Watchdog: Hardware monitoring interface not found on your system.
->>> Watchdog: Temperature abort trigger disabled.
->>> Watchdog: Temperature retain trigger disabled.
->>> 
->>> INFO: Removed 1870 hashes found in potfile.
->>> 
->>> Initializing device kernels and memory...[2K[33m* Device #1: build_opts '-I /usr/share/hashcat/OpenCL -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=1 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=1000 -D _unroll'[0m
->>> Initialized device kernels and memory...[2KDictionary cache hit:
->>> * Filename..: tmp/SmartHCDict.txt
->>> * Passwords.: 925137
->>> * Bytes.....: 15920919
->>> * Keyspace..: 71235549
->>> 
->>>                                                           - Device #1: autotuned kernel-accel to 1024
->>> - Device #1: autotuned kernel-loops to 38
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit => [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>                                                           [33mApproaching final keyspace - workload adjusted.[0m
->>> [33m[0m
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>
->>> Session..........: cvquak1l
->>> Status...........: Exhausted
->>> Hash.Type........: NTLM
->>> Hash.Target......: Tests/hibp_subset.txt
->>> Time.Started.....: Mon Mar  4 20:02:23 2019 (5 secs)
->>> Time.Estimated...: Mon Mar  4 20:02:28 2019 (0 secs)
->>> Guess.Base.......: File (tmp/SmartHCDict.txt)
->>> Guess.Mod........: Rules (/usr/share/hashcat/rules/best64.rule)
->>> Guess.Queue......: 1/1 (100.00%)
->>> Speed.Dev.#1.....: 14734.6 kH/s (13.93ms)
->>> Recovered........: 1870/10000 (18.70%) Digests, 0/1 (0.00%) Salts
->>> Recovered/Time...: CUR:N/A,N/A,N/A AVG:0,0,0 (Min,Hour,Day)
->>> Progress.........: 71235549/71235549 (100.00%)
->>> Rejected.........: 0/71235549 (0.00%)
->>> Restore.Point....: 925137/925137 (100.00%)
->>> Candidates.#1....: 996j99 -> uebeue
->>> HWMon.Dev.#1.....: N/A
->>> 
->>> Started: Mon Mar  4 20:02:23 2019
->>> [2KStopped: Mon Mar  4 20:02:30 2019
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session cvquak1l Tests/hibp_subset.txt /usr/share/SmartHashCat/lists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project
->>> ====================================
->>> * Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
->>> 
->>> Counting lines in Tests/hibp_subset.txt...[2KCounted lines in Tests/hibp_subset.txt...[2KParsing Hashes: 1/10000 (0.01%)...[2KParsed Hashes: 10000/10000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10000 digests; 10000 unique digests, 1 unique salts
->>> Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
->>> Rules: 77
->>> 
->>> Applicable optimizers:
->>> * Zero-Byte
->>> * Early-Skip
->>> * Not-Salted
->>> * Not-Iterated
->>> * Single-Salt
->>> * Raw-Hash
->>> 
->>> Password length minimum: 0
->>> Password length maximum: 256
->>> 
->>> [33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
->>> [33mThis enables cracking passwords and salts > length 32 but for the price of drastical reduced performance.[0m
->>> [33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
->>> [33m[0m
->>> Watchdog: Hardware monitoring interface not found on your system.
->>> Watchdog: Temperature abort trigger disabled.
->>> Watchdog: Temperature retain trigger disabled.
->>> 
->>> INFO: Removed 1870 hashes found in potfile.
->>> 
->>> Initializing device kernels and memory...[2K[33m* Device #1: build_opts '-I /usr/share/hashcat/OpenCL -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=1 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=1000 -D _unroll'[0m
->>> Initialized device kernels and memory...[2KDictionary cache hit:
->>> * Filename..: /usr/share/SmartHashCat/lists/rockyou.txt
->>> * Passwords.: 14344384
->>> * Bytes.....: 139921497
->>> * Keyspace..: 1104517568
->>> 
->>>                                                           - Device #1: autotuned kernel-accel to 1024
->>> - Device #1: autotuned kernel-loops to 38
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit => [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>                                                           [33mApproaching final keyspace - workload adjusted.[0m
->>> [33m[0m
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>
->>> Session..........: cvquak1l
->>> Status...........: Exhausted
->>> Hash.Type........: NTLM
->>> Hash.Target......: Tests/hibp_subset.txt
->>> Time.Started.....: Mon Mar  4 20:02:30 2019 (1 min, 15 secs)
->>> Time.Estimated...: Mon Mar  4 20:03:45 2019 (0 secs)
->>> Guess.Base.......: File (/usr/share/SmartHashCat/lists/rockyou.txt)
->>> Guess.Mod........: Rules (/usr/share/hashcat/rules/best64.rule)
->>> Guess.Queue......: 1/1 (100.00%)
->>> Speed.Dev.#1.....: 14807.0 kH/s (13.55ms)
->>> Recovered........: 1870/10000 (18.70%) Digests, 0/1 (0.00%) Salts
->>> Recovered/Time...: CUR:0,N/A,N/A AVG:0,0,0 (Min,Hour,Day)
->>> Progress.........: 1104517568/1104517568 (100.00%)
->>> Rejected.........: 0/1104517568 (0.00%)
->>> Restore.Point....: 14344384/14344384 (100.00%)
->>> Candidates.#1....: $HEX[6b6d38316b6d] -> $HEX[2a0337c22a03]
->>> HWMon.Dev.#1.....: N/A
->>> 
->>> Started: Mon Mar  4 20:02:30 2019
->>> [2KStopped: Mon Mar  4 20:03:45 2019
-
-Starting hashcat InsidePro-PasswordsPro.rule attacks (on all defined files, including SmartHCDict and Rockyou)
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session cvquak1l Tests/hibp_subset.txt tmp/SmartHCDict.txt -r /usr/share/hashcat/rules/InsidePro-PasswordsPro.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project
->>> ====================================
->>> * Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
->>> 
->>> Counting lines in Tests/hibp_subset.txt...[2KCounted lines in Tests/hibp_subset.txt...[2KParsing Hashes: 1/10000 (0.01%)...[2KParsing Hashes: 6472/10000 (64.72%)...[2KParsed Hashes: 10000/10000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10000 digests; 10000 unique digests, 1 unique saltshashcat (v4.0.1) starting in benchmark mode...
-
-[33mBenchmarking uses hand-optimized kernel code by default.[0m
-[33mYou can use it in your cracking session by setting the -O option.[0m
-[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
-[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
-[33m[0m
-OpenCL Platform #1: The pocl project
-====================================
-* Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
-
-Benchmark relevant options:
-===========================
-* --force
-* --optimized-kernel-enable
-
-Hashmode: 1000 - NTLM
-
-Speed.Dev.#1.....:   439.8 MH/s (8.94ms)
-
-Started: Mon Mar  4 20:06:21 2019
-[2KStopped: Mon Mar  4 20:06:31 2019
-Time: 2019-03-04 20:06:31.602322
-Sending default data to dictionary
-Starting cewl. You can force stop anytime with "CTRL+C"
-You can interact normally with the program!
-Executing Command: cewl -d 1 -e -v https://www.example.com -w tmp/cewl_out.txt
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> CeWL 5.3 (Heading Upwards) Robin Wood (robin@digi.ninja) (https://digi.ninja/)
->>> Starting at https://www.example.com
->>> Visiting: https://www.example.com, got response code 200
->>> Attribute text found:
->>> 
->>> 
->>> Offsite link, not following: http://www.iana.org/domains/example
->>> Writing words to file
->>> No email addresses found
-Time: 2019-03-04 20:06:31.988875
-Time: 2019-03-04 20:06:31.992604
-Starting combinations
-0 / 92511668 / 925116136 / 925116204 / 925116272 / 925116340 / 925116408 / 925116476 / 925116544 / 925116612 / 925116680 / 925116748 / 925116816 / 925116884 / 925116952 / 9251161020 / 9251161088 / 9251161156 / 9251161224 / 9251161292 / 9251161756 / 9251162220 / 9251162684 / 9251163148 / 9251163612 / 9251164076 / 9251164540 / 9251165004 / 9251165468 / 9251165932 / 9251166396 / 9251166860 / 9251167324 / 9251167788 / 9251168252 / 9251168716 / 9251169180 / 9251169644 / 92511610108 / 92511610572 / 92511611036 / 92511611500 / 92511611964 / 92511612428 / 92511612892 / 92511613356 / 92511613820 / 92511614284 / 92511614748 / 92511615212 / 92511615676 / 92511616140 / 92511616604 / 92511617068 / 92511617532 / 92511617996 / 92511618460 / 92511618924 / 92511619388 / 92511619852 / 92511620316 / 92511620780 / 92511621244 / 92511621708 / 92511622172 / 92511622636 / 92511623100 / 92511623564 / 92511624028 / 92511624492 / 92511624956 / 92511625420 / 92511625884 / 92511673212 / 925116120540 / 925116167868 / 925116215196 / 925116262524 / 925116309852 / 925116357180 / 925116404508 / 925116451836 / 925116499164 / 925116546492 / 925116593820 / 925116641148 / 925116688476 / 925116735804 / 925116783132 / 925116830460 / 925116877788 / 925116925116 / 925116925116 / 925116
-Time: 2019-03-04 20:06:32.344812
-Time: 2019-03-04 20:06:32.345017
-Starting attack!
-
-Starting hashcat leetspeak.rule attacks (on all defined files, including SmartHCDict and Rockyou)
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session rwizmyl6 Tests/hibp_subset.txt tmp/SmartHCDict.txt -r /usr/share/hashcat/rules/leetspeak.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project
->>> ====================================
->>> * Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
->>> 
->>> Counting lines in Tests/hibp_subset.txt...[2KCounted lines in Tests/hibp_subset.txt...[2KParsing Hashes: 1/10000 (0.01%)...[2KParsed Hashes: 10000/10000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10000 digests; 10000 unique digests, 1 unique salts
->>> Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
->>> Rules: 17
->>> 
->>> Applicable optimizers:
->>> * Zero-Byte
->>> * Early-Skip
->>> * Not-Salted
->>> * Not-Iterated
->>> * Single-Salt
->>> * Raw-Hash
->>> 
->>> Password length minimum: 0
->>> Password length maximum: 256
->>> 
->>> [33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
->>> [33mThis enables cracking passwords and salts > length 32 but for the price of drastical reduced performance.[0m
->>> [33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
->>> [33m[0m
->>> Watchdog: Hardware monitoring interface not found on your system.
->>> Watchdog: Temperature abort trigger disabled.
->>> Watchdog: Temperature retain trigger disabled.
->>> 
->>> INFO: Removed 1886 hashes found in potfile.
->>> 
->>> Initializing device kernels and memory...[2K[33m* Device #1: build_opts '-I /usr/share/hashcat/OpenCL -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=1 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=1000 -D _unroll'[0m
->>> Initialized device kernels and memory...[2KDictionary cache built:
->>> * Filename..: tmp/SmartHCDict.txt
->>> * Passwords.: 925137
->>> * Bytes.....: 15920919
->>> * Keyspace..: 15727329
->>> * Runtime...: 0 secs
->>> 
->>>                                                           - Device #1: autotuned kernel-accel to 1024
->>> - Device #1: autotuned kernel-loops to 8
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit => [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>                                                           [33mApproaching final keyspace - workload adjusted.[0m
->>> [33m[0m
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>
->>> Session..........: rwizmyl6
->>> Status...........: Exhausted
->>> Hash.Type........: NTLM
->>> Hash.Target......: Tests/hibp_subset.txt
->>> Time.Started.....: Mon Mar  4 20:06:32 2019 (1 sec)
->>> Time.Estimated...: Mon Mar  4 20:06:33 2019 (0 secs)
->>> Guess.Base.......: File (tmp/SmartHCDict.txt)
->>> Guess.Mod........: Rules (/usr/share/hashcat/rules/leetspeak.rule)
->>> Guess.Queue......: 1/1 (100.00%)
->>> Speed.Dev.#1.....: 13238.8 kH/s (3.22ms)
->>> Recovered........: 1886/10000 (18.86%) Digests, 0/1 (0.00%) Salts
->>> Recovered/Time...: CUR:N/A,N/A,N/A AVG:0,0,0 (Min,Hour,Day)
->>> Progress.........: 15727329/15727329 (100.00%)
->>> Rejected.........: 0/15727329 (0.00%)
->>> Restore.Point....: 925137/925137 (100.00%)
->>> Candidates.#1....: 67m0ng0dbd0<um3nt$ -> 2018@dmd0<um3nt$
->>> HWMon.Dev.#1.....: N/A
->>> 
->>> Started: Mon Mar  4 20:06:32 2019
->>> [2KStopped: Mon Mar  4 20:06:34 2019
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session rwizmyl6 Tests/hibp_subset.txt /usr/share/SmartHashCat/lists/rockyou.txt -r /usr/share/hashcat/rules/leetspeak.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project
->>> ====================================
->>> * Device #1: pthread-Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 4096/13878 MB allocatable, 8MCU
->>> 
->>> Counting lines in Tests/hibp_subset.txt...[2KCounted lines in Tests/hibp_subset.txt...[2KParsing Hashes: 1/10000 (0.01%)...[2KParsed Hashes: 10000/10000 (100.00%)[2KSorting hashes...[2KSorted hashes...[2KRemoving duplicate hashes...[2KRemoved duplicate hashes...[2KSorting salts...[2KSorted salts...[2KComparing hashes with potfile entries...[2KCompared hashes with potfile entries...[2KGenerating bitmap tables...[2KGenerated bitmap tables...[2KHashes: 10000 digests; 10000 unique digests, 1 unique salts
->>> Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
->>> Rules: 17
->>> 
->>> Applicable optimizers:
->>> * Zero-Byte
->>> * Early-Skip
->>> * Not-Salted
->>> * Not-Iterated
->>> * Single-Salt
->>> * Raw-Hash
->>> 
->>> Password length minimum: 0
->>> Password length maximum: 256
->>> 
->>> [33mATTENTION! Pure (unoptimized) OpenCL kernels selected.[0m
->>> [33mThis enables cracking passwords and salts > length 32 but for the price of drastical reduced performance.[0m
->>> [33mIf you want to switch to optimized OpenCL kernels, append -O to your commandline.[0m
->>> [33m[0m
->>> Watchdog: Hardware monitoring interface not found on your system.
->>> Watchdog: Temperature abort trigger disabled.
->>> Watchdog: Temperature retain trigger disabled.
->>> 
->>> INFO: Removed 1886 hashes found in potfile.
->>> 
->>> Initializing device kernels and memory...[2K[33m* Device #1: build_opts '-I /usr/share/hashcat/OpenCL -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=1 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=3 -D DGST_R2=2 -D DGST_R3=1 -D DGST_ELEM=4 -D KERN_TYPE=1000 -D _unroll'[0m
->>> Initialized device kernels and memory...[2KDictionary cache hit:
->>> * Filename..: /usr/share/SmartHashCat/lists/rockyou.txt
->>> * Passwords.: 14344384
->>> * Bytes.....: 139921497
->>> * Keyspace..: 243854528
->>> 
->>>                                                           - Device #1: autotuned kernel-accel to 1024
->>> - Device #1: autotuned kernel-loops to 8
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit => [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>                                                           [33mApproaching final keyspace - workload adjusted.[0m
->>> [33m[0m
->>> [s]tatus [p]ause [r]esume [b]ypass [c]heckpoint [q]uit =>
->>> Session..........: rwizmyl6
->>> Status...........: Exhausted
->>> Hash.Type........: NTLM
->>> Hash.Target......: Tests/hibp_subset.txt
->>> Time.Started.....: Mon Mar  4 20:06:35 2019 (17 secs)
->>> Time.Estimated...: Mon Mar  4 20:06:52 2019 (0 secs)
->>> Guess.Base.......: File (/usr/share/SmartHashCat/lists/rockyou.txt)
->>> Guess.Mod........: Rules (/usr/share/hashcat/rules/leetspeak.rule)
->>> Guess.Queue......: 1/1 (100.00%)
->>> Speed.Dev.#1.....: 13997.2 kH/s (2.97ms)
->>> Recovered........: 1886/10000 (18.86%) Digests, 0/1 (0.00%) Salts
->>> Recovered/Time...: CUR:N/A,N/A,N/A AVG:0,0,0 (Min,Hour,Day)
->>> Progress.........: 243854528/243854528 (100.00%)
->>> Rejected.........: 0/243854528 (0.00%)
->>> Restore.Point....: 14344384/14344384 (100.00%)
->>> Candidates.#1....: $HEX[206b6d3831303838] -> $HEX[042a0337c2a156406d30242103]
->>> HWMon.Dev.#1.....: N/A
->>> 
->>> Started: Mon Mar  4 20:06:34 2019
->>> [2KStopped: Mon Mar  4 20:06:53 2019
-
-Starting hashcat best64.rule attacks (on all defined files, including SmartHCDict and Rockyou)
-You can interact normally with the program!
-Executing Command: /usr/bin/hashcat -m 1000 -w 3 --session rwizmyl6 Tests/hibp_subset.txt tmp/SmartHCDict.txt -r /usr/share/hashcat/rules/best64.rule -o outputs/final_output.txt --force
-Interuptable! Stop anytime by pressing "CTRL+C"
->>> hashcat (v4.0.1) starting...
->>> 
->>> OpenCL Platform #1: The pocl project

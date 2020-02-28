@@ -8,9 +8,10 @@ class Input(InputAbstract):
     def __init__(self, attacker, filters):
         super(Input, self).__init__("InputCompanyName")
         self.filters = [
-            #filters['FilterUnique'],
+            filters['FilterUnique'],
+            filters['FilterWriteToSmartFile'],
             filters['FilterCombinaison'],
-            filters['FilterWriteToSmartFile']
+            filters['FilterWriteToSmartRule']
         ]
         self.company_name = attacker.company_name
     
@@ -18,6 +19,5 @@ class Input(InputAbstract):
         return
     
     def get_results(self):
-        print("in input1")
         for val in [self.company_name]:
             yield val

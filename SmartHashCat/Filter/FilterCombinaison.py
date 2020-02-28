@@ -26,16 +26,11 @@ class Filter(FilterAbstract):
             yield l.strip().lower()
 
     def get_results(self):
-        print("in filter combinaison")
         Misc.print_date_time()
         print("Starting combinations")
 
         for l1 in self.get_lines_1():
             yield l1
-        for l2 in self.get_lines_2():
-            yield l2
-        for l3 in self.get_lines_3():
-            yield l3
         
         for l1 in self.get_lines_1():
             for l2 in self.get_lines_2():

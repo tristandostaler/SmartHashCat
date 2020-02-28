@@ -9,8 +9,9 @@ class Input(InputAbstract):
         super(Input, self).__init__("InputCeWL")
         self.filters = [
             filters['FilterUnique'],
+            filters['FilterWriteToSmartFile'],
             filters['FilterCombinaison'],
-            filters['FilterWriteToSmartFile']
+            filters['FilterWriteToSmartRule']
         ]
         self.cewl_depth = attacker.cewl_depth
         self.url = attacker.url
@@ -26,7 +27,6 @@ class Input(InputAbstract):
         Misc.print_date_time()
     
     def get_results(self):
-        print("in input0")
         with open(self.cewl_file, 'r') as f:
             yield f.readline()
             

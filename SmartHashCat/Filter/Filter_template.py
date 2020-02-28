@@ -11,7 +11,5 @@ class Filter(FilterAbstract):
         '''
         This function returns the result(s) of the execution.
         It is preferable to use yield instead of return to avoid heavy memory usage
-        A filter should never write to a temporary of final file.
-        The only filter allowed to do this is the FilterWriteToSmartFile
         '''
         raise NotImplementedError("Not yet implemented!")

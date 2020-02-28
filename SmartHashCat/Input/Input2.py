@@ -9,8 +9,9 @@ class Input(InputAbstract):
         super(Input, self).__init__("InputDefaultFiles")
         self.filters = [
             filters['FilterUnique'],
+            filters['FilterWriteToSmartFile'],
             filters['FilterCombinaison'],
-            filters['FilterWriteToSmartFile']
+            filters['FilterWriteToSmartRule']
         ]
         self.user_list = attacker.user_list
         self.most_common_pass = attacker.most_common_pass
@@ -20,7 +21,6 @@ class Input(InputAbstract):
         return
     
     def get_results(self):
-        print("in input2")
         with open(self.user_list, 'r') as f:
             yield f.readline()
         with open(self.modifier_list, 'r') as f:
