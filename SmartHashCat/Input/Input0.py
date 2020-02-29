@@ -30,5 +30,6 @@ class Input(InputAbstract):
     def get_results(self):
         #print("input 0")
         with open(self.cewl_file, 'r') as f:
-            yield f.readline()
+            for line in f:
+                yield line
             

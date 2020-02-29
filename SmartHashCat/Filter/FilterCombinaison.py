@@ -12,6 +12,8 @@ class Filter(FilterAbstract):
         self.smart_file = attacker.smart_file
         self.user_list = attacker.user_list
         self.modifier_list = attacker.modifier_list
+        #Misc.print_date_time()
+        print("Starting combinations")
 
     def get_lines_1(self):
         for l in self.previous_input.get_results():
@@ -26,25 +28,18 @@ class Filter(FilterAbstract):
             yield l.strip().lower()
 
     def get_results(self):
-        Misc.print_date_time()
-        print("Starting combinations")
-
-        for l1 in self.get_lines_1():
-            yield l1
-        
         for l1 in self.get_lines_1():
             for l2 in self.get_lines_2():
                 yield f"{l1}{l2}"
-
-        for l1 in self.get_lines_1():
-            for l3 in self.get_lines_3():
-                yield f"{l1}{l3}"
-
+                yield f"{l2}{l1}"
+        
         for l2 in self.get_lines_2():
             for l3 in self.get_lines_3():
                 yield f"{l2}{l3}"
-        
+                yield f"{l3}{l2}"
+
         for l1 in self.get_lines_1():
+            yield l1
             for l2 in self.get_lines_2():
                 for l3 in self.get_lines_3():
                     yield f"{l1}{l2}{l3}"

@@ -23,8 +23,11 @@ class Input(InputAbstract):
     
     def get_results(self):
         with open(self.user_list, 'r') as f:
-            yield f.readline()
+            for line in f:
+                yield line
         with open(self.modifier_list, 'r') as f:
-            yield f.readline()
+            for line in f:
+                yield line
         with open(self.most_common_pass, 'r') as f:
-            yield f.readline()
+            for line in f:
+                yield line

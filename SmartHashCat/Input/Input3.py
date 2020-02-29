@@ -22,6 +22,8 @@ class Input(InputAbstract):
     
     def get_results(self):
         with open(self.custom_dict_en, 'r') as f:
-            yield f.readline()
+            for line in f:
+                yield line
         with open(self.custom_dict_fr, 'r') as f:
-            yield f.readline()
+            for line in f:
+                yield line
