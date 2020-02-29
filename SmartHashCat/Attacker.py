@@ -72,7 +72,8 @@ class SmartHCAttacker:
                     self.final_output_file, self.show_when_done,
                     self.hashcat_hash_option, self.is_add_force_flag)
         
-        p1.files_to_run_rules_on.append(self.custom_list)
+        if self.custom_list:
+            p1.files_to_run_rules_on.append(self.custom_list)
 
         p1.run()
 
