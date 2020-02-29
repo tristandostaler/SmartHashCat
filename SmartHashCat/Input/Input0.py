@@ -28,7 +28,6 @@ class Input(InputAbstract):
         Misc.print_date_time()
     
     def get_results(self):
-        #print("input 0")
         with open(self.cewl_file, 'r') as f:
             for line in f:
                 yield line

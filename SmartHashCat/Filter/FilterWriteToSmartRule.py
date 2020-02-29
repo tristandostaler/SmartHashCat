@@ -11,13 +11,10 @@ class Filter(FilterAbstract):
         self.has_been_written = False
 
     def get_results(self):
-        #print("write to smart rule")
         if not self.has_been_written:
-            print("Writing to SmartRule file")
             self.has_been_written = True
             with open(self.smart_rule, 'a') as f:
                 for line in self.previous_input.get_results():
-                    #print(line)
                     f.write(f"{line}\n")
         for l in self.previous_input.get_results():
             yield l
