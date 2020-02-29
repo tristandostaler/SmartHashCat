@@ -68,7 +68,7 @@ class SmartHCAttacker:
         self.check_smartfile()
 
         p1 = Phase1(self.hashes_file, self.workload_profile,
-                    self.rock_you_file, self.smart_file, self.session,
+                    self.rock_you_file, self.smart_file, self.smart_rule, self.session,
                     self.final_output_file, self.show_when_done,
                     self.hashcat_hash_option, self.is_add_force_flag)
         
@@ -78,7 +78,7 @@ class SmartHCAttacker:
         p1.run()
 
     def attack_mask(self, phase_selection=2):
-        pm = PhaseMask(self.hashes_file, phase_selection, self.smart_file,
+        pm = PhaseMask(self.hashes_file, phase_selection, self.smart_file, self.smart_rule,
                        self.session, self.final_output_file,
                        self.show_when_done, self.hashcat_hash_option,
                        self.is_add_force_flag)
