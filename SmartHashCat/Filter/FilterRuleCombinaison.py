@@ -37,6 +37,7 @@ class Filter(FilterAbstract):
         return to_return
 
     def get_results(self):
+        yield ":"
         for l1 in self.get_lines_1():
             yield f"{self.transform_to_prepend_hashcat_format(l1)} :"
             yield f": {self.transform_to_apend_hashcat_format(l1)}"
