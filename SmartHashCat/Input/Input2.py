@@ -1,6 +1,4 @@
 from Input.InputAbstract import InputAbstract
-import Misc
-import CommandRunner
 
 
 class Input(InputAbstract):
@@ -9,10 +7,7 @@ class Input(InputAbstract):
         super(Input, self).__init__("InputDefaultFiles")
         self.filters = [
             filters['FilterStripAndLower'],
-            filters['FilterUnique'],
-            filters['FilterWriteToSmartFile'],
-            filters['FilterCombinaison'],
-            filters['FilterWriteToSmartRule']
+            filters['FilterWriteToSmartFile']
         ]
         self.user_list = attacker.user_list
         self.most_common_pass = attacker.most_common_pass

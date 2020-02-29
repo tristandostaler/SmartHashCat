@@ -10,9 +10,7 @@ class Input(InputAbstract):
         self.filters = [
             filters['FilterStripAndLower'],
             filters['FilterUnique'],
-            filters['FilterWriteToSmartFile'],
-            filters['FilterCombinaison'],
-            filters['FilterWriteToSmartRule']
+            filters['FilterWriteToSmartFile']
         ]
         self.cewl_depth = attacker.cewl_depth
         self.url = attacker.url

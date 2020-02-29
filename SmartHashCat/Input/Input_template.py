@@ -1,6 +1,4 @@
 from Input.InputAbstract import InputAbstract
-import Misc
-import CommandRunner
 
 
 class Input(InputAbstract):
@@ -8,9 +6,11 @@ class Input(InputAbstract):
     def __init__(self, attacker, filters):
         super(Input, self).__init__("InputName",)
         self.filters = [
-            filters['FilterWriteToSmartFileTemp'],
+            filters['FilterStripAndLower'],
+            filters['FilterUnique'],
             filters['FilterWriteToSmartFile'],
-            filters['FilterCombinaison']
+            filters['FilterRuleCombinaison'],
+            filters['FilterWriteToSmartRule']
         ]
     
     def run_child(self):

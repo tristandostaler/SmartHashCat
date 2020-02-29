@@ -1,6 +1,4 @@
-import CommandRunner
 from Filter.FilterAbstract import FilterAbstract
-import Misc
 
 
 class Filter(FilterAbstract):

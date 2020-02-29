@@ -1,4 +1,3 @@
-import CommandRunner
 from Filter.FilterAbstract import FilterAbstract
 
 

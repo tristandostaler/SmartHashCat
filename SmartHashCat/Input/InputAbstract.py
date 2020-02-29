@@ -1,6 +1,3 @@
-import CommandRunner
-
-
 class InputAbstract:
 
     def __init__(self, input_name):

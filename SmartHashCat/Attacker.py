@@ -42,8 +42,8 @@ class SmartHCAttacker:
                 for filter_module in i.filters:
                     f = filter_module.Filter(self, previous)
                     previous = f
-                for l in previous.get_results():
-                    continue
+                [l for l in previous.get_results()]
+                
 
     def check_rockyou(self):
         is_rockyou_exists = os.path.exists(self.rock_you_file)

@@ -1,6 +1,3 @@
-import CommandRunner
-
-
 class FilterAbstract:
 
     def __init__(self, previous_input):

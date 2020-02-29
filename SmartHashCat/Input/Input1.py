@@ -1,6 +1,4 @@
 from Input.InputAbstract import InputAbstract
-import Misc
-import CommandRunner
 
 
 class Input(InputAbstract):
@@ -9,9 +7,8 @@ class Input(InputAbstract):
         super(Input, self).__init__("InputCompanyName")
         self.filters = [
             filters['FilterStripAndLower'],
-            filters['FilterUnique'],
             filters['FilterWriteToSmartFile'],
-            filters['FilterCombinaison'],
+            filters['FilterRuleCombinaison'],
             filters['FilterWriteToSmartRule']
         ]
         self.company_name = attacker.company_name

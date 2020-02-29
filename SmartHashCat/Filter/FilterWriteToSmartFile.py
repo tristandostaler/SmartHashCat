@@ -1,6 +1,4 @@
-import CommandRunner
 from Filter.FilterAbstract import FilterAbstract
-import Misc
 
 
 class Filter(FilterAbstract):
@@ -16,5 +14,7 @@ class Filter(FilterAbstract):
             with open(self.smart_file, 'a') as f:
                 for line in self.previous_input.get_results():
                     f.write(f"{line}\n")
-        for l in self.previous_input.get_results():
-            yield l
+                    yield line
+        else:
+            for l in self.previous_input.get_results():
+                yield l
