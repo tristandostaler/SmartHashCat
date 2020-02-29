@@ -1,25 +1,29 @@
 from Input.InputAbstract import InputAbstract
-import Misc
-import CommandRunner
 
 
 class Input(InputAbstract):
     
     def __init__(self, attacker, filters):
-        super(Input, self).__init__("InputDefaultDict", "tmp/default_dict_out.txt")
+        super(Input, self).__init__("InputDefaultFiles")
         self.filters = [
-            filters['FilterWriteToSmartFileTemp'],
-            filters['FilterUnique'],
-            filters['FilterWriteToSmartFile'],
-            filters['FilterCombinaison'],
-            filters['FilterWriteToSmartFile']
+            filters['FilterStripAndLower'],
+            filters['FilterRuleFormat'],
+            filters['FilterWriteToSmartRule']
         ]
-        self.custom_dict_en = "/usr/share/SmartHashCat/dict/1k_words_en.txt"
-        self.custom_dict_fr = "/usr/share/SmartHashCat/dict/1k_words_fr.txt"
+        self.user_list = attacker.user_list
+        self.most_common_pass = attacker.most_common_pass
+        self.modifier_list = attacker.modifier_list
     
     def run_child(self):
-        Misc.copy_file_content_to_other_file(
-            self.custom_dict_en, self.filter_transit_file, append=False)
-        Misc.copy_file_content_to_other_file(
-            self.custom_dict_fr, self.filter_transit_file)
-        return True
+        return
+    
+    def get_results(self):
+        with open(self.user_list, 'r') as f:
+            for line in f:
+                yield line
+        with open(self.modifier_list, 'r') as f:
+            for line in f:
+                yield line
+        with open(self.most_common_pass, 'r') as f:
+            for line in f:
+                yield line
