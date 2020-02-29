@@ -35,7 +35,7 @@ class SmartHCAttacker:
         for input_name in self.inputs:
             module = self.inputs[input_name]
             i = module.Input(self, self.filters)
-            print("Runnin input and filters for " + i.name)
+            print("Runnin input and filters for " + input_name)
             i.run()
             if i.need_filters():
                 previous = i

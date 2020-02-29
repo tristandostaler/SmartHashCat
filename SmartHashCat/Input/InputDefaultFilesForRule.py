@@ -4,10 +4,11 @@ from Input.InputAbstract import InputAbstract
 class Input(InputAbstract):
     
     def __init__(self, attacker, filters):
-        super(Input, self).__init__("InputDefaultFiles")
+        super(Input, self).__init__()
         self.filters = [
             filters['FilterStripAndLower'],
-            filters['FilterWriteToSmartFile']
+            filters['FilterRuleFormat'],
+            filters['FilterWriteToSmartRule']
         ]
         self.user_list = attacker.user_list
         self.most_common_pass = attacker.most_common_pass

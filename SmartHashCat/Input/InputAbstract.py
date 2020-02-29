@@ -1,8 +1,7 @@
 class InputAbstract:
 
-    def __init__(self, input_name):
+    def __init__(self):
         self.filters = []
-        self.name = input_name
 
     def need_filters(self):
         return len(self.filters) > 0
