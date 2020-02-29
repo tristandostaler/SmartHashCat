@@ -1,10 +1,10 @@
-from Input.InputAbstract import InputAbstract
+from SHCInput.SHCInputAbstract import SHCInputAbstract
 
 
-class Input(InputAbstract):
+class SHCInput(SHCInputAbstract):
     
     def __init__(self, attacker, filters):
-        super(Input, self).__init__()
+        super(SHCInput, self).__init__()
         self.filters = [
             filters['FilterStripAndLower'],
             filters['FilterWriteToSmartFile'],

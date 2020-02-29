@@ -34,7 +34,7 @@ class SmartHCAttacker:
         self.inputs = DynamicLoader.load_input()
         for input_name in self.inputs:
             module = self.inputs[input_name]
-            i = module.Input(self, self.filters)
+            i = module.SHCInput(self, self.filters)
             print("Runnin input and filters for " + input_name)
             i.run()
             if i.need_filters():

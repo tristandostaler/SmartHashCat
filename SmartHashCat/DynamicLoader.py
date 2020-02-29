@@ -40,7 +40,7 @@ def load_from_folder_and_sort(folder, sort=True):
         return not_sorted_input_list
 
 def load_input(sort=True):
-    return load_from_folder_and_sort("/Input/", sort)
+    return load_from_folder_and_sort("/SHCInput/", sort)
 
 def load_filter(sort=True):
     return load_from_folder_and_sort("/Filter/", sort)

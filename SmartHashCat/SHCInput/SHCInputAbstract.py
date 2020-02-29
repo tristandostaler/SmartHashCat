@@ -1,4 +1,4 @@
-class InputAbstract:
+class SHCInputAbstract:
 
     def __init__(self):
         self.filters = []
