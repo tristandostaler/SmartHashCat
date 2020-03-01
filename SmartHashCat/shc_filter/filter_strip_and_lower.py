@@ -1,4 +1,4 @@
-from Filter.FilterAbstract import FilterAbstract
+from shc_filter.filter_abstract import FilterAbstract
 
 
 class Filter(FilterAbstract):

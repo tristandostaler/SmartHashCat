@@ -1,4 +1,4 @@
-from Filter.FilterAbstract import FilterAbstract
+from shc_filter.filter_abstract import FilterAbstract
 
 
 class Filter(FilterAbstract):
@@ -9,7 +9,7 @@ class Filter(FilterAbstract):
         self.smart_file = attacker.smart_file
         self.user_list = attacker.user_list
         self.modifier_list = attacker.modifier_list
-        #Misc.print_date_time()
+        #misc.print_date_time()
         print("Starting combinations")
 
     def get_lines_1(self):

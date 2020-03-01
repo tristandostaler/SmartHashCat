@@ -1,4 +1,4 @@
-from SHCInput.SHCInputAbstract import SHCInputAbstract
+from shc_input.shc_input_abstract import SHCInputAbstract
 
 
 class SHCInput(SHCInputAbstract):
@@ -6,10 +6,10 @@ class SHCInput(SHCInputAbstract):
     def __init__(self, attacker, filters):
         super(SHCInput, self).__init__()
         self.filters = [
-            filters['FilterStripAndLower'],
-            filters['FilterWriteToSmartFile'],
-            filters['FilterRuleCombinaison'],
-            filters['FilterWriteToSmartRule']
+            filters['filter_strip_and_lower'],
+            filters['filter_write_to_smart_file'],
+            filters['filter_rule_combinaison'],
+            filters['filter_write_to_smart_rule']
         ]
         self.company_name = attacker.company_name
     
